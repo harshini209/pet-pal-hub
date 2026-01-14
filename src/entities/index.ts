@@ -19,7 +19,7 @@ export interface BehavioralResources {
   petType?: string;
   /** @wixFieldType text */
   content?: string;
-  /** @wixFieldType image */
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
   thumbnailImage?: string;
   /** @wixFieldType url */
   externalLink?: string;
@@ -36,7 +36,7 @@ export interface CommunityPosts {
   _updatedDate?: Date;
   /** @wixFieldType text */
   postContent?: string;
-  /** @wixFieldType image */
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
   postImage?: string;
   /** @wixFieldType text */
   authorName?: string;
@@ -57,7 +57,7 @@ export interface PetGalleryPhotos {
   _id: string;
   _createdDate?: Date;
   _updatedDate?: Date;
-  /** @wixFieldType image */
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
   photoFile?: string;
   /** @wixFieldType text */
   photoTitle?: string;
@@ -88,7 +88,7 @@ export interface PetProfiles {
   petType?: string;
   /** @wixFieldType text */
   petLocation?: string;
-  /** @wixFieldType image */
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
   profilePicture?: string;
   /** @wixFieldType text */
   ownerId?: string;
@@ -107,7 +107,7 @@ export interface PetTypeCommunities {
   petTypeName?: string;
   /** @wixFieldType text */
   description?: string;
-  /** @wixFieldType image */
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
   communityImage?: string;
   /** @wixFieldType number */
   memberCount?: number;
@@ -130,7 +130,7 @@ export interface VeterinaryDirectory {
   vetName?: string;
   /** @wixFieldType text */
   specialty?: string;
-  /** @wixFieldType image */
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
   profilePicture?: string;
   /** @wixFieldType text */
   location?: string;
